@@ -137,6 +137,16 @@ function get_footer() {
     
 }
 
+function genHeader($title) {
+    $res = "";
+    $res .= "<meta charset='utf-8' />";
+    $res .= "<title>". $title ."</title>";
+    $res .= "<link rel='stylesheet' href='css/styles.css' rel='stylesheet'/>";
+    $res .= "<link rel='stylesheet' href='css/bootstrap.css' rel='stylesheet'/>";
+    $res .= "<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet'>";
+    
+    return $res;
+}
 
 ?>
 

@@ -8,10 +8,7 @@ $arr = array()
 
 <html>
     <head>
-        <title>Festival du Film au Parc Montceau</title>
-        <meta charset='utf-8' />
-        <link rel='stylesheet' href='css/styles.css' type='text/css'/>
-        <link rel='stylesheet' href='css/bootstrap.css' type='text/css' />
+        <?php echo genHeader("Les films à l'affiche")?>
         
     </head>
     <body>
@@ -37,11 +34,6 @@ $arr = array()
         echo get_footer();
     ?>
         
-            
-           
-            
-    
-            
-    
+
     </body>
 </html>

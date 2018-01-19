@@ -5,10 +5,7 @@
 
 <html>
     <head>
-        <meta charset='utf-8'/>
-        <link rel='stylesheet' href="css/styles.css" type='text/css'>
-        <link rel='stylesheet' href='css/bootstrap.css' type='text/css' />
-        <title>Festival du Film au Parc Montceau</title>
+        <?php echo genHeader("Préinscription") ?>
     
     </head>
     <body>

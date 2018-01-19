@@ -9,51 +9,49 @@ include ("functions/functions.php");
         <meta charset='utf-8' />
         <link rel='stylesheet' href='css/styles.css' type='text/css'/>
         <link rel='stylesheet' href='css/bootstrap.css' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
     </head>
-    <body>
-
-            
-    <header class='navbar navbar-static-top'>
-        <div class='row'>
-            <img src='img/header_img.png' alt='Image du header' class='img-responsive'/>";
-            <div class="caption">';
-                <h3 class="text-center">Festival du Film en Plein Air</h3>';
     
-            </div>
-        </div>
-        
-        </div>
-    </header>
-        <div class='container'>
-            
-            <div class='col-xs-10 col-xs-offset-1'>
-                <section class='row'>
-                    <h5 style='text-align:center'>Titre de la section</h5>
-                    <p class='col-xs-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis venenatis faucibus. Etiam tempor faucibus erat, sit amet vulputate risus ornare pretium. Nulla at pharetra odio, in pharetra augue. Proin rhoncus auctor tortor vel dapibus. Donec ullamcorper odio sed maximus lobortis. Vivamus vulputate ornare vehicula. Proin consectetur est auctor gravida finibus. Suspendisse ex lectus, gravida at pharetra vel, rhoncus quis erat. Phasellus at iaculis urna. Mauris a nulla lacus. Nam vel arcu vel sem imperdiet pellentesque vitae id leo. Nunc finibus, ante vitae rutrum suscipit, massa magna mollis mauris, at eleifend massa nulla sit amet felis. Donec in risus libero. Quisque at erat quis elit venenatis scelerisque. Quisque porta pretium leo at consectetur. Aenean feugiat efficitur purus nec lobortis.
-</p>
-                    <p class='col-xs-5 col-xs-offset-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis venenatis faucibus. Etiam tempor faucibus erat, sit amet vulputate risus ornare pretium. Nulla at pharetra odio, in pharetra augue. Proin rhoncus auctor tortor vel dapibus. Donec ullamcorper odio sed maximus lobortis. Vivamus vulputate ornare vehicula. Proin consectetur est auctor gravida finibus. Suspendisse ex lectus, gravida at pharetra vel, rhoncus quis erat. Phasellus at iaculis urna. Mauris a nulla lacus. Nam vel arcu vel sem imperdiet pellentesque vitae id leo. Nunc finibus, ante vitae rutrum suscipit, massa magna mollis mauris, at eleifend massa nulla sit amet felis. Donec in risus libero. Quisque at erat quis elit venenatis scelerisque. Quisque porta pretium leo at consectetur. Aenean feugiat efficitur purus nec lobortis.
-</p>
-                </section>
-            
-                
-            </div>
-            <div class='col-xs-6 col-xs-offset-3'>
-                <p>Cliquez sur le bouton ci-dessous pour voir la liste des projections : </p>
-                <div class='text-center'>
-                    <a href='liste_films.php'>Cliquez ici !</a> 
+    <body>    
+        <header>
+            <?php echo get_header(basename($_SERVER['PHP_SELF'])); ?>
+        </header>
+        <div class='container-fluid'>
+            <h3 class='text-center titreindex'>Bienvenue sur le site du Festival du film !</h3> <br />
+            <div class='row content'>
+                <div class='col-xs-12 col-md-5 col-md-push-1'>
+
+                        <p> Ce festival se déroulera dans le cadre idyllique du Parc Montceau, et verra la diffusion de quatre films durant les 4 jours de festival, du 5 au 8 août prochain. <br /> <br />
+                            <span class='soustitre_liste'>Les films en compétition seront :</span> <br /> 
+                        </p>
+
+                        <ul class='text-center filmsdiff'>
+                            <li>Gran Torino (qui ouvrira le festival)</li>
+                            <li>Shutter Island</li>
+                            <li>La liste de Schindler</li>
+                            <li>Black Swan (qui sera le film de clôture)</li>
+                        </ul>
+
+
+
+
                 </div>
-                
-                <br />
-                <p>Pour vous préinscrire, veuillez envoyer un mail à l'adresse <a href='mailto:resa@monceau.festival.com'>resa@montceau.festival.com</a> avec les informations suivantes : </p> <br />
-                <ul>
-                    <li>Nom et prénom</li>
-                    <li>Film souhaité et séance</li>
-                    <li>Nombre de personnes (si groupe)</li>
-                </ul>
-                
-            
+                <div class='col-xs-12 col-md-5 col-md-push-2'>
+                    <p>Pour vous préinscrire, veuillez vous rendre sur le formulaire d'inscription dont le lien est accessible dans le menu, ou dirigez-vous vers la page de présentation d'un des films, puis cliquez sur le bouton "Je réserve". <br />
+                    </p>
+                </div>
             </div>
-            
+            <div class='row'>
+                <div class='text-center'>
+                    <p class='label-bouton-liste'>Cliquez sur le bouton ci-dessous pour voir la liste des projections : </p>
+                    <a href='liste_films.php' class='bouton'>Cliquez ici !</a> 
+                </div>
+            </div>
+             <div id='push'></div>
+
         </div>
+        <?php
+            echo get_footer();
+        ?>
     </body>
 </html>

@@ -1,6 +1,9 @@
 <!doctype html>
 <?php
 include ("functions/functions.php");
+
+$arr = array()
+
 ?>
 
 <html>
@@ -9,75 +12,36 @@ include ("functions/functions.php");
         <meta charset='utf-8' />
         <link rel='stylesheet' href='css/styles.css' type='text/css'/>
         <link rel='stylesheet' href='css/bootstrap.css' type='text/css' />
+        
     </head>
     <body>
 
             
-    <header class='navbar'>
-        <?php echo get_header(); ?>
+    <header>
+        <?php
+            echo get_header(basename($_SERVER['PHP_SELF']));
+        ?>
+    
     </header>
-        <div class='container'>
-            <div class='row text-center'>
-                <h4>Liste des films</h4>
-            </div>
-            <div class='row xs-col-10 xs-offset-1'>
-                <table id='listefilms'>
-                    <thead>
-                        <th>Date et heure</th>
-                        <th>Nom du film</th>
-                        <th>Places disponibles</th>
-                        <th>Lien</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>5 août, 18h</td>
-                            <td>Film 1</td>
-                            <td>100</td>
-                            <td><a href="#">Lien vers page du film</a></td>
-                        </tr>
-                        <tr>
-                            <td>5 août, 20h</td>
-                            <td>Film 2</td>
-                            <td>100</td>
-                            <td><a href="#">Lien vers page du film</a></td>
-                        </tr>
-                        <tr>
-                            <td>5 août, 22h</td>
-                            <td>Film 4</td>
-                            <td></td>
-                            <td><a href="#">Lien vers page du film</a></td>
-                        </tr>
-                        <tr>
-                            <td>6 août, 18h</td>
-                            <td>Film 4</td>
-                            <td></td>
-                            <td><a href="#">Lien vers page du film</a></td>
-                        </tr>
-                        <tr>
-                            <td>6 août, 20h</td>
-                            <td>Film 2</td>
-                            <td></td>
-                            <td><a href="#">Lien vers page du film</a></td>
-                        </tr>
-                        <tr>
-                            <td>6 août, 22h</td>
-                            <td>Film 3</td>
-                            <td></td>
-                            <td><a href="#">Lien vers page du film</a></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="#">Lien vers page du film</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+        
+    <div class='container-fluid'>
+        <h2 class='text-center'>Les films sélectionnés : </h2> <br />
+        <p>Pour voir la description d'un film (et éventuellement de réserver des places, qui sait !), cliquez sur le nom du film sous l'affiche.</p>
+        <div id='row grille_films'>
+            <?php echo gen_grillefilms(); ?>    
+        </div>
+                
+    </div>
+        
+    <?php
+        echo get_footer();
+    ?>
+        
             
-            </div>
+           
             
     
             
-        </div>
+    
     </body>
 </html>

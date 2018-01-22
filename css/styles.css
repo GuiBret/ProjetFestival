@@ -1,36 +1,21 @@
 @font-face {
 
     font-family:Handshop;
-
     src:url(../fonts/Fontscafe_HandShopTypography-C30_demo.ttf);
-
-    
-
-    
-
 }
-
-
 
 @font-face {
 
     font-family:Corleone;
-
     src:url(../fonts/CorleoneDue.ttf);
 
 }
 
-
-
 @font-face {
 
     font-family:HiddenCinema;
-
     src:url(../fonts/Hiddencinema.ttf);
-
 }
-
-
 
 @font-face {
 
@@ -40,43 +25,34 @@
 
 }
 
+html, body {
+    
+    height:100%;
+}
 
+body {
 
-
+    background-color:#222;
+    color:white;
+    height:100%;
+}
 
 @media screen and (max-device-width:361px) {
 
     .footer {
 
         position:relative;
-
         bottom:0;
-
-        height:auto !important;
-
+        height:auto;
     }
 
 }
 
-
-
 @media screen and (min-device-width : 768px) and (max-device-width : 1024px) { /* Tablette uniquement */
-
     .image-description-film {
 
         margin-bottom:50px;
-
     }
-
-}
-
-
-
-
-
-html, body {
-
-    height:100%;
 
 }
 
@@ -85,231 +61,49 @@ html, body {
     header {
 
         height:60vh;
-
     }
-
-    
 
     .background {
 
         height:60vh;
-
     }
 
     .hidden-xs {
 
-        display:none !important;
-
+        display:none;
     }
-
 }
-
-
-
-
 
 h1, h2, h3, h4, h5, h6 {
 
-    font-family:"Open Sans" !important;
-
+    font-family:"Open Sans";
 }
-
-
-
-body {
-
-    background-color:#222 !important;
-
-    color:white !important;
-
-    height:100%;
-
-    
-
-}
-
-
-
-.caption {
-
-    position:absolute;
-
-    top:0;
-
-    height:100%;
-
-    width:100%;
-
-    letter-spacing:3px;
-
-}
-
-
-
-.caption span {
-
-    color:white;
-
-    font-family: Corleone;
-
-    position:absolute;
-
-    width:100%;
-
-}
-
-
-
-header {
-
-    position:relative;
-
-    height:40vh;
-
-}
-
-
-
-
-
-
-
 
 
 h2, h3, h4 {
 
-    font-weight:bold !important;
-
+    font-weight:bold;
 }
-
-
-
-
 
 .container-fluid {
 
-    padding-top:50px; /* S'appliquera sur toutes les pages< */
-
+    padding-top:50px; 
     padding-bottom:100px;
-
-    height: auto !important;
-
-    height: 100%;
-
+    height: auto;
     margin: auto auto 100px auto;
-
 }
-
-
-
-div#grille_films {
-
-    margin-top:50px;
-
-}
-
-
-
-
-
-
-
-h5.txtfilm {
-
-    position:absolute;
-
-    width:100%;
-
-    text-align:center;
-
-    font-weight:bold;
-
-    right:0;
-
-    left:0;
-
-    bottom:2%;
-
-    color:white;
-
-    
-
-    text-decoration:none;
-
-    color:white;
-
-    font-family:HiddenCinema !important;
-
-    font-size:24px;
-
-    font-weight:bold;
-
-    
-
-}
-
-
-
-div#captionfilm {
-
-    background:rgba(0,0,0,0.97);
-
-    position:absolute;
-
-    bottom:0;
-
-    height:15%;
-
-    filter:blur(5px);
-
-    width:100%;
-
-}
-
-
-
-div.film {
-
-    padding:0; /* Pour pouvoir afficher correctement le fond */
-
-    margin-top:30px;
-
-}
-
-
-
-div.film img {
-
-    position:relative;
-
-    border-radius:10px 10px; /* Bordures des affiches de film */
-
-}
-
-
-
-
-
-
-
-
 
 span, p, li, label {
 
     font-size:20px;
-
     font-family:Alegreya;
-
     color:white;
-
 }
-
 
 
 .resa { /* Bas de page dans presentation_film.php */
 
     margin-top:50px;
-
 }
 
 
@@ -317,318 +111,61 @@ span, p, li, label {
 ul.filmsdiff {
 
     list-style-type:none;
-
 }
-
-
-
-
-
-.logo {
-
-    width:30px;
-
-    height:30px;
-
-}
-
-
-
-.footer {
-
-    
-
-    bottom:0;
-
-    width:100%;
-
-    border-top:2px solid white;
-
-    padding-top:20px; /* Pour éviter que le texte colle à la bordure */
-
-    background-color:#333 !important;
-
-}
-
-
-
-.footer, .push {
-
-    height:250px;
-
-}
-
-
-
-.background {
-
-    background-image: url("../img/header_img.png");
-
-    background:url(../img/header_img.png);
-
-    background-position: center;
-
-    background-repeat:no-repeat;
-
-    -webkit-background-size: cover;
-
-    -moz-background-size: cover;
-
-    -o-background-size: cover;
-
-    background-size: cover;
-
-    width:100%;
-
-    position:absolute;
-
-    top:0;
-
-    height:40vh;
-
-    filter:blur(4px);
-
-}
-
-
-
-.menu {
-
-    position:absolute;
-
-    top:20px;
-
-    right:20px;
-
-}
-
-
-
-.menu > a {
-
-    margin-right:20px;
-
-    color:white;
-
-    font-size:20px;
-
-    font-family:"Open Sans";
-
-}
-
-
-
-.menu > a:hover {
-
-    color:white;
-
-}
-
-
-
-
-
-.header-title {
-
-    color:white;
-
-    font-weight: thin;
-
-    font-size:42px;
-
-    top:25%;
-
-}
-
-
-
-.header-subtitle {
-
-    color:white;
-
-    font-size:28px;
-
-    top:55%;
-
-}
-
-
 
 i, span img {
 
     margin-right:10px;
-
     margin-bottom:20px;
-
 }
-
-
 
 .bouton {
 
     color: white;
     background-color: red;
     border-radius: 10px 10px;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-family: "Open Sans";
     padding: 20px;
-
 }
-
-
 
 .titre {
 
     margin-bottom:40px;
-
 }
-
-
-
-
-
-
 
 .content { /* Contenu page principale */
 
     margin-bottom:30px;
-
 }
-
-
 
 .label-bouton-liste {
 
     margin-bottom:50px;
-
 }
-
-
-
-
-
-
 
 .formulaire {
 
     color:black;
-
-    font-size:18px;
-
+    font-size:1.8rem;
 }
-
-
 
 select, option {
 
     font-family:Alegreya;
-
 }
-
-
-
-
-
-#btn-resa-form {
-
-    position: relative;
-    bottom: -50px;
-}
-
-#message {
-
-    opacity:0;
-    border-radius: 5px 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width:100%;
-    background-color:blue;
-    font-size:28px;
-
-    
-
-    color:white;
-
-    text-align:center;
-
-}
-
-
 
 iframe {
 
     margin-top:50px;
-
 }
-
-
 
 .bouton:hover {
 
     color:white;
-
 }
-
-
-
-.lien-footer {
-    margin-bottom:-10px;
-}
-
-
-
-.a-footer:hover {
-    color:white;
-}
-
-.titre-footer {
-    margin-bottom:10px;
-}
-
-
-
-.row-footer {
-    margin-left:0;
-    margin-right:0;
-
-}
-
-
-
-.control-label {
-
-    margin-top:10px;
-
-}
-
-
 
 a:visited, a:active, a:link {
 
     color:white;
-
-}
-
-
-
-.actuel {
-
-    font-weight:bold;
-
-}
-
-
-
-#affiche {
-
-    width:100%;
-
-}
-
-
-
-#titreform {
-
-    margin-bottom:50px;
-
 }

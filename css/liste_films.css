@@ -1,0 +1,38 @@
+h5.txtfilm {
+
+    position:absolute;
+    font-family:HiddenCinema;
+    width:100%;
+    bottom:2%;
+    color:white;
+    text-decoration:none;
+    font-size:2.4rem;
+    font-weight:bold;
+}
+
+div#grille_films {
+
+    margin-top:50px;
+}
+
+div.film {
+
+    padding:0; /* Pour pouvoir afficher correctement le fond */
+    margin-top:30px;
+}
+
+div.film img {
+
+    position:relative;
+    border-radius:10px 10px; /* Bordures des affiches de film */
+}
+
+div#captionfilm {
+
+    background:rgba(0,0,0,0.97);
+    position:absolute;
+    bottom:0;
+    height:15%;
+    filter:blur(5px);
+    width:100%;
+}

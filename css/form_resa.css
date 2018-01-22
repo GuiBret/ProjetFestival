@@ -1,0 +1,33 @@
+.control-label {
+
+    margin-top:10px;
+}
+
+#message {
+
+    opacity:0;
+    border-radius: 5px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:100%;
+    background-color:blue;
+    font-size:2.8rem;
+    color:white;
+    text-align:center;
+}
+
+#affiche {
+
+    width:100%;
+}
+
+#btn-resa-form {
+
+    position: relative;
+    bottom: -50px;
+}
+
+#titreform {
+
+    margin-bottom:50px;
+}

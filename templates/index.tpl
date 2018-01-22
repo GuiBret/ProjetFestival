@@ -37,11 +37,7 @@
                     <a href='liste_films.php' class='bouton'>Cliquez ici !</a> 
                 </div>
             </div>
-             <div id='push'></div>
-
         </div>
-        <?php
-            echo get_footer();
-        ?>
+        {include file="footer.tpl" films=$films}
     </body>
 </html>

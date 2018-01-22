@@ -29,11 +29,10 @@
 
             <h4 class='text-center'>Nos diffusions : </h4>
     
-
-        {*<p class='lien-footer'><a class='a-footer' href='presentation_film.php?film=" . $film["index"] . "'>". $film["nom_film"] . "</a></p> <br /> *}
+        {foreach from=$films item=$film}
+            <p class='lien-footer'><a class='a-footer' href='presentation_film.php?film={$film["index"]}'>{$film["nom_film"]}</a></p> <br /> 
+        {/foreach}
     
-    
-   
         </div>
     
    
@@ -45,7 +44,6 @@
 
                 <span><img src='img/twitter.png' class='logo' alt='Logo Twitter' />@festivalmontceau</span><br />
                 <span><img src='img/facebook.png' class='logo' alt='Logo Facebook' />Festival du Cinéma en Plein Air</span><br />
- 
                 <span><img src='img/instagram.png' class='logo' alt='Logo Instagram' />festivalcinema</span>
  
             </div>

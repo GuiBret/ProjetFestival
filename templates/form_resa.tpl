@@ -3,6 +3,7 @@
 <html>
     <head>
         {include file="links.tpl" title="Préinscription"} 
+        <link rel="stylesheet" type="text/css" href="css/form_resa.css" />
     
     </head>
     <body>

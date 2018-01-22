@@ -1,0 +1,80 @@
+header {
+
+    position:relative;
+    height:40vh;
+}
+
+.menu {
+
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+
+.menu > a {
+
+    margin-right:20px;
+    color:white;
+    font-size:20px;
+    font-family:"Open Sans";
+}
+
+.menu > a:hover {
+
+    color:white;
+}
+
+.header-title {
+
+    color:white;
+    font-weight: thin;
+    font-size:4.2rem;
+    top:25%;
+}
+
+.header-subtitle {
+
+    color:white;
+    font-size:2.8rem;
+    top:55%;
+}
+
+.caption {
+
+    position:absolute;
+    top:0;
+    height:100%;
+    width:100%;
+    letter-spacing:3px;
+}
+
+.caption span {
+
+    color:white;
+    font-family: Corleone;
+    position:absolute;
+    width:100%;
+}
+
+.background {
+
+    background-image: url("../img/header_img.webp");
+    background-position: center;
+    background-repeat:no-repeat;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    background-size: cover;
+    width:100%;
+    position:absolute;
+    top:0;
+    height:40vh;
+    filter:blur(4px);
+}
+
+.actuel {
+
+    font-weight:bold;
+}

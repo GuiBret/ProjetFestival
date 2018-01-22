@@ -1,6 +1,7 @@
 <html>
     <head>
         {include file="links.tpl" title="Festival du Film au Parc Montceau"}
+        <link href="css/index.css" type="text/css" rel="stylesheet" />
     </head>
     
     <body>    

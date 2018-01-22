@@ -8,7 +8,7 @@ header {
 
     position:absolute;
     top:20px;
-    right:20px;
+    right:0;
 }
 
 .menu > a {
@@ -22,6 +22,10 @@ header {
 .menu > a:hover {
 
     color:white;
+}
+
+.header {
+    height:100%;
 }
 
 .header-title {
@@ -70,11 +74,37 @@ header {
     width:100%;
     position:absolute;
     top:0;
-    height:40vh;
+    height:100%;
     filter:blur(4px);
 }
 
 .actuel {
 
     font-weight:bold;
+}
+
+@media only screen and (max-device-width:576px) {
+    .menu > a {
+        font-size:1.2rem;
+    }
+    
+    .header-title {
+        font-size:2.4rem;
+    }
+    
+    .header-subtitle {
+        font-size:1.8rem;
+    }
+}
+
+@media only screen and (orientation:landscape) and (max-width:750px) { /* Landscape mobile */
+    header {
+        height:80vh;
+    }
+}
+
+@media only screen and (orientation:landscape) and (min-width:751px) and (max-width:1025px) { /* Landscape tablette*/
+    header {
+        height:60vh;
+    }
 }

@@ -37,15 +37,79 @@ body {
     height:100%;
 }
 
-@media screen and (max-device-width:361px) {
 
-    .footer {
 
-        position:relative;
-        bottom:0;
-        height:auto;
-    }
+h1, h2, h3, h4, h5, h6 {
 
+    font-family:"Open Sans";
+}
+
+
+h2, h3, h4 {
+
+    font-weight:bold;
+}
+
+.container-fluid {
+
+    padding-top:50px; 
+    padding-bottom:50px;
+    height: auto;
+    margin: auto auto 100px auto;
+}
+
+span, p, li, label {
+
+    font-size:2rem;
+    font-family:Alegreya;
+    color:white;
+}
+
+.resa { /* Bas de page dans presentation_film.php */
+
+    margin-top:50px;
+}
+
+.bouton {
+
+    color: white;
+    background-color: red;
+    border-radius: 10px 10px;
+    font-size: 1.8rem;
+    font-family: "Open Sans";
+    padding: 1.3rem;
+}
+
+ul.filmsdiff {
+
+    list-style-type:none;
+}
+
+
+.bouton:hover {
+
+    color:white;
+}
+
+.titre {
+
+    margin-bottom:40px;
+}
+
+.label-bouton-liste {
+
+    margin-bottom:50px;
+}
+
+
+iframe {
+
+    margin-top:50px;
+}
+
+a:visited, a:active, a:link {
+
+    color:white;
 }
 
 @media screen and (min-device-width : 768px) and (max-device-width : 1024px) { /* Tablette uniquement */
@@ -72,100 +136,12 @@ body {
 
         display:none;
     }
+    
+    
 }
 
-h1, h2, h3, h4, h5, h6 {
-
-    font-family:"Open Sans";
-}
-
-
-h2, h3, h4 {
-
-    font-weight:bold;
-}
-
-.container-fluid {
-
-    padding-top:50px; 
-    padding-bottom:100px;
-    height: auto;
-    margin: auto auto 100px auto;
-}
-
-span, p, li, label {
-
-    font-size:20px;
-    font-family:Alegreya;
-    color:white;
-}
-
-
-.resa { /* Bas de page dans presentation_film.php */
-
-    margin-top:50px;
-}
-
-
-
-ul.filmsdiff {
-
-    list-style-type:none;
-}
-
-i, span img {
-
-    margin-right:10px;
-    margin-bottom:20px;
-}
-
-.bouton {
-
-    color: white;
-    background-color: red;
-    border-radius: 10px 10px;
-    font-size: 2.2rem;
-    font-family: "Open Sans";
-    padding: 20px;
-}
-
-.titre {
-
-    margin-bottom:40px;
-}
-
-.content { /* Contenu page principale */
-
-    margin-bottom:30px;
-}
-
-.label-bouton-liste {
-
-    margin-bottom:50px;
-}
-
-.formulaire {
-
-    color:black;
-    font-size:1.8rem;
-}
-
-select, option {
-
-    font-family:Alegreya;
-}
-
-iframe {
-
-    margin-top:50px;
-}
-
-.bouton:hover {
-
-    color:white;
-}
-
-a:visited, a:active, a:link {
-
-    color:white;
+@media screen and (max-device-width:576px) {
+    span, p, li, label {
+        font-size: 1.4rem;
+    }
 }

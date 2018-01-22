@@ -31,3 +31,15 @@
 
     margin-bottom:50px;
 }
+
+.formulaire {
+
+    color:black;
+    font-size:1.8rem;
+}
+
+select, option {
+
+    font-family:Alegreya;
+}
+

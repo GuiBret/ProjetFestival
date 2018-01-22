@@ -3,7 +3,7 @@
 
     <div class='row row-footer'>
 
-        <div class='col-xs-4 txtfooter'>
+        <div class='col-xs-12 col-md-4 txtfooter'>
    
             <span>Festival du Cinéma en Plein Air</span> <br />
    
@@ -25,7 +25,7 @@
             
         </div>
         
-        <div class='col-xs-4'>
+        <div class='col-xs-12 col-md-4'>
 
             <h4 class='text-center'>Nos diffusions : </h4>
     
@@ -36,7 +36,7 @@
         </div>
     
    
-        <div class='col-xs-4'>
+        <div class='col-xs-12 col-md-4'>
     
             <h4 class='text-center media_titre'>Nos médias sociaux : </h4>
  

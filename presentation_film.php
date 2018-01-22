@@ -1,25 +1,15 @@
 <!doctype html>
 <?php
-include ("functions/functions.php");
+    include ("functions/functions.php");
+
+    require_once("smarty/Smarty.class.php");
+
+    $smarty = new Smarty();
+
+    $smarty->assign("film", $films[$_GET["film"]]);
+
+
+
+    $smarty->display("presentation_film.tpl");
 ?>
 
-<html>
-    <head>
-        <?php echo genHeader("Présentation d'un film"); ?>
-    </head>
-    <body>
-        <header>
-            <?php echo get_header(basename($_SERVER['PHP_SELF'])); ?>
-        </header>
-        <div class='container-fluid'>
-            <?php 
-
-                echo gen_pres_film(intval($_GET["film"]));
-                
-            ?>
-        </div>
-        <?php
-            echo get_footer();
-        ?>
-    </body>
-</html>

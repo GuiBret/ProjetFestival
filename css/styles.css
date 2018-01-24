@@ -71,7 +71,10 @@ span, p, li, label {
 }
 
 .bouton {
-
+    display:block;
+    
+    width:20%;
+    margin: 0 auto;
     color: white;
     background-color: red;
     border-radius: 10px 10px;
@@ -87,7 +90,8 @@ ul.filmsdiff {
 
 
 .bouton:hover {
-
+    transform:scale(1.1, 1.1);
+    transition-duration:250ms;
     color:white;
 }
 
@@ -98,7 +102,7 @@ ul.filmsdiff {
 
 .label-bouton-liste {
 
-    margin-bottom:50px;
+    margin-bottom:2rem;
 }
 
 
@@ -107,8 +111,8 @@ iframe {
     margin-top:50px;
 }
 
-a:visited, a:active, a:link {
-
+a:visited, a:active, a:link, a:hover{
+    text-decoration:none;
     color:white;
 }
 
@@ -143,5 +147,10 @@ a:visited, a:active, a:link {
 @media screen and (max-device-width:576px) {
     span, p, li, label {
         font-size: 1.4rem;
+    }
+    
+    .bouton {
+        
+        width:70%;
     }
 }

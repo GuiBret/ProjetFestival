@@ -21,7 +21,7 @@
                 <img src='img/popcorn.jpg' id='affiche' style='display:hidden' />
             </div>
             <form>
-                <div class='col-xs-4 col-xs-offset-4 col-md-5 col-md-offset-1 formulaire'>
+                <div class='col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1 formulaire'>
                     <div class='input-group'>
                         <label for='nom' class='control-label'>Nom :  </label>
                         <div class='controls'>
@@ -62,10 +62,9 @@
                             <select name='seance' id='seance'></select> 
                         </div>
                     </div>
-                    <div class='input-group'>
+                    <div>
                         <div class='controls'>
-                            <a href='#' class='bouton' id='btn-resa-form'>Je réserve !</a>
-                        
+                            <a href='#' class='bouton text-center' id='btn-resa-form'>Je réserve !</a>
                         </div>
                     </div>
 

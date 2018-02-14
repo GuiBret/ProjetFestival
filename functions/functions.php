@@ -14,28 +14,5 @@ $smarty = new Smarty();
 $smarty->assign("films", $films);
 $smarty->assign("pagename", basename($_SERVER['PHP_SELF']));
 
-
-function gen_grillefilms() {
-    $element = "";
-    global $films;
-    $compteur = 0;
-    $val = $compteur;
-    foreach($films as $film) {
-        if ($compteur == 2) {
-            $val += 1;
-        }
-        $element .= "<div class='film col-xs-12 col-sm-5 col-lg-2 col-lg-push-". strval($val) ." " . ($compteur % 2 == 1 ? "col-xs-push-2":"") . "'>";
-        $element .= "<a class='lienfilm' href='presentation_film.php?film=". $film["index"] . "'> <img src='". $film["image"] . "' class='img-responsive img-rounded' />";
-        $element .= "<div id='captionfilm'></div>"; // Emplacement flouté de l'image
-        
-        $element .= "<h5 class='txtfilm'>". $film["nom_film"] . "</h5></a></div>";
-        
-        $compteur++;
-        $val++;
-        
-    }
-    return $element;
-}
-
 ?>
 

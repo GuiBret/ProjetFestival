@@ -53,7 +53,7 @@ $(document).ready(function (){
         e.preventDefault();
         
         afficherMessage();
-        $("html, body").animate({
+        $("html").animate({
             scrollTop: 0
         }, function() {
                 $message.animate({opacity:1}, 2000, function() {

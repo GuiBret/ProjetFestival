@@ -1,9 +1,9 @@
-<div class='footer panel-footer img-rounded'>
+<div class='footer panel-footer rounded'>
     
 
-    <div class='row row-footer'>
+    <div class='d-flex flex-column flex-md-row row-footerrow-footer'>
 
-        <div class='col-xs-12 col-md-4 txtfooter'>
+        <div class='col-12 col-md-4 txtfooter'>
    
             <span>Festival du Cinéma en Plein Air</span> <br />
    
@@ -25,7 +25,7 @@
             
         </div>
         
-        <div class='col-xs-12 col-md-4'>
+        <div class='col-12 col-md-4'>
 
             <h4 class='text-center'>Nos diffusions : </h4>
     
@@ -36,11 +36,11 @@
         </div>
     
    
-        <div class='col-xs-12 col-md-4'>
+        <div class='col-12 col-md-4'>
     
             <h4 class='text-center media_titre'>Nos médias sociaux : </h4>
  
-            <div class='row media_soc'>
+            <div class='media_soc'>
 
                 <span><img src='img/twitter.png' class='logo' alt='Logo Twitter' />@festivalmontceau</span><br />
                 <span><img src='img/facebook.png' class='logo' alt='Logo Facebook' />Festival du Cinéma en Plein Air</span><br />

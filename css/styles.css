@@ -28,6 +28,7 @@
 html, body {
     
     height:100%;
+    font-size:10px;
 }
 
 body {
@@ -52,8 +53,8 @@ h2, h3, h4 {
 
 .container-fluid {
 
-    padding-top:50px; 
-    padding-bottom:50px;
+    padding-top:5rem; 
+    padding-bottom:2rem<;
     height: auto;
     margin: auto auto 100px auto;
 }

@@ -62,10 +62,9 @@
                             <select name='seance' id='seance'></select> 
                         </div>
                     </div>
-                    <div>
-                        <div class='controls'>
-                            <a href='#' class='bouton text-center' id='btn-resa-form'>Je réserve !</a>
-                        </div>
+ 
+                    <div class='input-group'>
+                        <a href='#' class='bouton text-center' id='btn-resa-form'>Je réserve !</a>
                     </div>
 
 

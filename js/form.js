@@ -8,12 +8,13 @@ $(document).ready(function (){
                     {"id":"3", "nom":"Black Swan", "image": "img/black_swan.jpg", "seances":["6 août à 18h", "7 août à 20h", "8 août à 22h"]} ]
     };
 
-    var $select_films = $("select#film");
-    var $select_seance = $("select#seance");
-    var $img = $("img#affiche");
-    var $titre = $("h2#titreform");
-    var $message = $("div#message");
-    $bouton = $("a#btn-resa-form");
+    let $select_films = $("select#film"),
+        $select_seance = $("select#seance"),
+        $img = $("img#affiche"),
+        $titre = $("h2#titreform"),
+        $message = $("div#message"),
+        $bouton = $("a#btn-resa-form");
+    
     /* Récupère l'argument */
     jQuery.urlParam = function(name){
         var results = new RegExp('[/\?&]' + name + '=([^&#]*)').exec(window.location.href);
@@ -24,6 +25,46 @@ $(document).ready(function (){
            return results[1] || 0;
         }
     }
+    
+    
+    var arg = jQuery.urlParam("film");
+    remplirSelectFilms(arg); 
+    if(arg !== null) {
+           
+        majAffiche(arg);
+        majTitre(arg);
+        remplirSelectSeances();
+    }
+    else {
+        $defaut = $("<option></option>");
+        $defaut.html("Choisissez un film");
+        $select_seance.append($defaut);
+    }
+    
+    
+    
+    $select_films.on("change", function() {
+        changerImage();
+        remplirSelectSeances(); 
+        $titre.html(`Réservation pour ${$("select#film option:selected").html()}`);
+    });
+    
+    $bouton.on("click", function(e) {
+        e.preventDefault();
+        
+        afficherMessage();
+        $("html, body").animate({
+            scrollTop: 0
+        }, function() {
+                $message.animate({opacity:1}, 2000, function() {
+                $message.animate({opacity:0}, 2000); 
+            });    
+        });
+        
+        
+        
+    });
+    
     
     function changerImage() {
         $film_selectionne = $("select#film option:selected").html()
@@ -84,40 +125,5 @@ $(document).ready(function (){
     function afficherMessage() {
         $message.css("display", "block");
     }
-    
-    
-    
-    var arg = jQuery.urlParam("film");
-    remplirSelectFilms(arg); 
-    if(arg !== null) {
-           
-        majAffiche(arg);
-        majTitre(arg);
-        remplirSelectSeances();
-    }
-    else {
-        $defaut = $("<option></option>");
-        $defaut.html("Choisissez un film");
-        $select_seance.append($defaut);
-    }
-    
-    
-    
-    $select_films.on("change", function() {
-        changerImage();
-        remplirSelectSeances(); 
-        $titre.html("Réservation pour "+ $("select#film option:selected").html());
-    });
-    
-    $bouton.on("click", function() {
-        
-        $message.animate({opacity:1}, 2000, function() {
-           $message.animate({opacity:0}, 2000); 
-        });
-       // setInterval(afficherMessage, 2000);
-        //$message.css("display", "none");
-        
-        
-    });
 
 });

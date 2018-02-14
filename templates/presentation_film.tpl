@@ -9,8 +9,6 @@
 
         </header>
         <div class='container-fluid'>
-            {$film["nom_film"]}
-
             <h3 class='text-center titre_pres_film'>{$film['nom_film']}</h3> <br />
 
             <div class='row'>
@@ -29,11 +27,11 @@
     
                     <p><strong>Synopsis : </strong>{$film["synopsis"]}</p> <br /> <br />
         
-                    <div class="col-xs-x12 text-center">
+                    <div class="col-xs-12">
     
-                        <h4 class='text-left'>Bande-annonce :</h4>
+                        <h4>Bande-annonce :</h4>
         
-                        <iframe align="left" width="50%" height="400" src="{$film['bande_annonce']}"></iframe>
+                        <iframe align="left" class="col-xs-12 col-lg-6 col-lg-offset-2" height="400" src="{$film['bande_annonce']}"></iframe>
 
                     </div>
     
@@ -45,7 +43,7 @@
     
                 <div class='text-center'>
     
-                    <a href='form_resa.php?film=" . $film["index"] . "' class='bouton'>Je réserve ! </a></div></div>
+                    <a href='form_resa.php?film={$film["index"]}' class='bouton'>Je réserve ! </a></div></div>
             
 
         

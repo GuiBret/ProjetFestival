@@ -4,8 +4,7 @@
 }
 
 #message {
-
-    opacity:0;
+    display:none;
     border-radius: 5px 5px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -24,8 +23,7 @@
 #btn-resa-form {
 
     position: relative;
-    bottom: -50px;
-    
+    bottom: -50px; 
 }
 
 #titreform {

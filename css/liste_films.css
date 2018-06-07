@@ -36,3 +36,7 @@ div#captionfilm {
     filter:blur(5px);
     width:100%;
 }
+
+.subtitle_list {
+  text-align:center;
+}

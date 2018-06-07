@@ -39,7 +39,7 @@
             <div>
                 <div class='text-center'>
                     <p class='label-bouton-liste'>Cliquez sur le bouton ci-dessous pour voir la liste des projections : </p>
-                    <a href='liste_films.php' class='bouton'>Cliquez ici !</a>
+                    <a href='liste_films' class='bouton'>Cliquez ici !</a>
                 </div>
             </div>
         </div>

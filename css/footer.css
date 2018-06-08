@@ -24,8 +24,9 @@ h4 {
     bottom:0;
     width:100%;
     border-top:2px solid white;
-    padding-top:20px; /* Pour éviter que le texte colle à la bordure */
+    padding: 30px 0; /* Pour éviter que le texte colle à la bordure */
     background-color:#333;
+
 }
 
 span.media_soc {
@@ -33,7 +34,6 @@ span.media_soc {
 }
 
 .footer {
-
     height:auto;
 }
 

@@ -30,7 +30,7 @@
             <h4 class='text-center'>Nos diffusions : </h4>
 
         {foreach from=$films item=$film}
-            <p class='lien-footer'><a class='a-footer' href='presentation_film?film={$film["index"]}'>{$film["nom_film"]}</a></p> <br /> 
+            <p class='lien-footer'><a class='a-footer' href='presentation_film?film={$film["index"]}'>{$film["nom_film"]}</a></p> <br />
         {/foreach}
 
         </div>
@@ -40,11 +40,11 @@
 
             <h4 class='text-center media_titre'>Nos médias sociaux : </h4>
 
-            <div class='media_soc'>
+            <div class='liste_medias'>
 
-                <span><img src='img/twitter.png' class='logo' alt='Logo Twitter' />@festivalmontceau</span><br />
-                <span><img src='img/facebook.png' class='logo' alt='Logo Facebook' />Festival du Cinéma en Plein Air</span><br />
-                <span><img src='img/instagram.png' class='logo' alt='Logo Instagram' />festivalcinema</span>
+                <span><img src='img/twitter.png' class='logo' alt='Logo Twitter' /><span class="media_soc">@festivalmontceau</span></span><br />
+                <span><img src='img/facebook.png' class='logo' alt='Logo Facebook' /><span class="media_soc">Festival du Cinéma en Plein Air</span></span><br />
+                <span><img src='img/instagram.png' class='logo' alt='Logo Instagram' /><span class="media_soc">festivalcinema</span></span>
 
             </div>
 

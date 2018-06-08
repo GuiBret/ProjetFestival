@@ -1,4 +1,4 @@
-h5.txtfilm {
+.txtfilm {
 
     position:absolute;
     font-family:HiddenCinema;
@@ -22,7 +22,7 @@ div.film {
 }
 
 div.film img {
-
+    user-drag:none;
     position:relative;
     border-radius:10px 10px; /* Bordures des affiches de film */
 }
